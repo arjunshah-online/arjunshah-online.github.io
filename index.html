@@ -3,135 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Shah | STEM Innovator</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <title>Arjun Shah | Personal Portfolio</title>
+    
+    <style>
+        /* BASIC STYLING AND LAYOUT */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9; /* Light background */
+            text-align: center;
+        }
+
+        /* Container to limit width for better readability on large screens */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 2px solid #eee;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            /* EDIT 2: Your Name/Main Title */
+            font-size: 2.5em;
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        header p {
+            /* EDIT 3: Your Subtitle/Tagline */
+            font-size: 1.1em;
+            color: #7f8c8d;
+            margin-top: 5px;
+        }
+
+        #description {
+            padding: 20px 0;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        #description h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* NAVIGATION TABS SECTION */
+        #tabs-nav {
+            display: flex; /* Use flexbox for horizontal alignment */
+            flex-wrap: wrap; /* Allows tabs to wrap on smaller screens */
+            justify-content: center; /* Center the tabs */
+            margin: 40px 0;
+            padding: 0;
+            list-style: none; /* Remove bullet points */
+            gap: 10px; /* Space between tabs */
+            border-top: 1px solid #ecf0f1;
+            padding-top: 20px;
+        }
+
+        .tab-link {
+            /* Style for the tab/link appearance */
+            text-decoration: none;
+            color: #fff; /* Text color */
+            background-color: #3498db; /* Primary button color */
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            flex-grow: 0; /* Prevents stretching */
+            flex-shrink: 0; /* Prevents shrinking */
+        }
+
+        .tab-link:hover {
+            /* Hover effect for a professional feel */
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        /* IMAGE AND DOCUMENT SPACE SECTION */
+        #content-space {
+            text-align: left;
+            padding: 20px;
+            border-top: 1px solid #ecf0f1;
+            margin-top: 30px;
+        }
+        
+        .profile-img {
+            /* Style for an optional profile image */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            border: 4px solid #3498db;
+        }
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>[EDIT 2: Your Full Name]</h1>
+            <p>Aerospace Engineer | Researcher | Photographer</p>
+        </header>
 
-    <nav id="navbar">
-        <div class="container">
-            <a href="#hero" class="logo">ARJUN SHAH</a>
-            <div class="nav-links">
-                <a href="#innovation">Innovation</a>
-                <a href="#research">Research</a>
-                <a href="#academic">Profile</a>
-                <a href="#community">Impact</a>
-            </div>
-        </div>
-    </nav>
-
-    <section id="hero" class="hero-section">
-        <div class="container">
-            <p class="intro-text">Hello, I'm</p>
-            <h1>ARJUN SHAH.</h1>
-            <p class="tagline">An IBDP Student, STEM Innovator, and Researcher focused on Sustainable Engineering and Technology[cite: 7].</p>
-            <a href="mailto:arjunshah.applications@gmail.com" class="button-primary">Get in Touch</a>
-        </div>
-    </section>
-
-    <main>
-
-        <section id="innovation" class="content-section">
-            <div class="container">
-                <h2 class="section-title">01. PATENTS & INNOVATION 💡</h2>
-                
-                <div class="project-item">
-                    <h3>Decision Review System for Cricket</h3>
-                    <p>Developed a low-cost decision review app with ball-tracking technology for local cricket games[cite: 25]. Synthesizing concepts from **physics with machine learning and python programming**[cite: 25]. Filed for a Design IPR and Utility Patent[cite: 26].</p>
-                </div>
-                
-                <div class="project-item">
-                    <h3>Animal Neck Collar Based Energy Harvesting (Shaking TENG Capsule)</h3>
-                    <p>Designed an energy-harvesting collar from recycled textile waste[cite: 28]. Converts mechanical energy to electrical energy based on the principle of electrostatic induction to power animal monitoring sensors[cite: 28, 29]. Filed for a Design patent[cite: 29].</p>
-                </div>
-            </div>
+        <section id="description">
+            <h2>About Me</h2>
+            
+            <p>Welcome! I'm an enthusiastic engineering graduate with a deep interest in sustainable technologies, particularly green hydrogen, and a background in aerothermodynamics research. My professional focus is on creating practical, impactful solutions, documented through technical papers and patents. Outside of engineering, I am passionate about wildlife and school photography, capturing the world around me.</p>
+            <p>Use this space to elaborate on your professional journey and personal interests.</p>
         </section>
+
+        <nav id="tabs-nav">
+            <a href="resume.html" class="tab-link">1. Resume / CV</a>
+            <a href="patents.html" class="tab-link">2. Patents</a>
+            <a href="aerother-research.html" class="tab-link">3. Research: Aerother</a>
+            <a href="maintenance-booklet.html" class="tab-link">4. Maintenance Booklet</a>
+            <a href="hydrogen-paper.html" class="tab-link">5. Green Hydrogen Paper</a>
+            <a href="roots.html" class="tab-link">6. Roots</a>
+            <a href="photography.html" class="tab-link">7. Photography (Wildlife & School)</a>
+        </nav>
+
+        <section id="content-space">
+            <h2>Featured Documents & Media</h2>
+            <p>You can use this section to immediately feature key links, images, or documents for quick access before your visitors click the tabs.</p>
+            
+            <p>
+                To download my full CV/Resume directly, click here: 
+                <a href="your-resume-file.pdf" download style="color: #3498db; font-weight: bold;">Download Resume (PDF)</a>
+            </p>
+
+            </section>
         
-        <section id="research" class="content-section gray-bg">
-            <div class="container">
-                <h2 class="section-title">02. RESEARCH & STEM EXPERIENCES 🔬</h2>
-                
-                <div class="experience-item">
-                    <h4>First Author, Research Publication (2025) [cite: 48, 49]</h4>
-                    <p>Paper: *Solar vs Electrolysis Methods for Green Hydrogen Production: A Meta-Analysis...* [cite: 50] Published in the International Journal of Engineering Research (IJOER)[cite: 51].</p>
-                </div>
-                
-                <div class="experience-item">
-                    <h4>CERN Beamline Competition (2025) [cite: 57, 58]</h4>
-                    <p>Co-authored proposal: *“Investigation of Eddy Currents Generated by Relativistic Charged Particles”*[cite: 59]. Team ranked **8th out of 175 teams globally**[cite: 60].</p>
-                </div>
-                
-                <div class="experience-item">
-                    <h4>Summer Intern, Aerotherm Products (2024 & 2025) [cite: 36]</h4>
-                    <p>Authored a detailed report: *“Reducing Industrial water requirements with improved heat transfer solutions”*[cite: 37]. Compared Air-cooled v/s Water-cooled heat exchanger designs on various sustainability parameters[cite: 39].</p>
-                </div>
-                
-                <div class="experience-item">
-                    <h4>Summer Intern, Renesys Power Systems (2025) [cite: 43]</h4>
-                    <p>Involved in testing a new PCB for controlling/optimizing input power sources[cite: 44]. Learned about RMS and interpreted data from various solar plant sensors[cite: 46].</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="academic" class="content-section">
-            <div class="container">
-                <h2 class="section-title">03. SKILLS & ACADEMIC PROFILE</h2>
-                
-                <div class="grid-2-col">
-                    <div class="grid-item">
-                        <h3>Standardized Tests & Honors</h3>
-                        <ul>
-                            <li>**SAT Total:** 1440 (Math 780; English 660) [cite: 10]</li>
-                            <li>**AP:** Psychology - 4 [cite: 12]</li>
-                            <li>**IGCSE:** International Certificate of Education with Distinction (2 A*s) [cite: 17]</li>
-                            <li>**UWaterloo Contests (2025):** Certificate of Distinction in Physics, Math, and Chemistry Contests[cite: 19, 20, 21].</li>
-                        </ul>
-                    </div>
-                    <div class="grid-item">
-                        <h3>Technical Skills & Courses</h3>
-                        <ul>
-                            <li>**Programming:** Python & Java [cite: 96]</li>
-                            <li>**Design Software:** CAD (2-D) and Sketch Up (3-D) [cite: 55]</li>
-                            <li>**AI Scholars Program:** Certificate of Completion from InSpirit AI (Jun 2024)[cite: 93].</li>
-                            <li>**Coursera:** Introduction to Mathematical Thinking (Stanford)[cite: 91].</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="community" class="content-section gray-bg">
-            <div class="container">
-                <h2 class="section-title">04. LEADERSHIP & COMMUNITY IMPACT 🤝</h2>
-                
-                <div class="experience-item">
-                    <h4>Building Lives Through Solar Training (2025) [cite: 31]</h4>
-                    <p>Created training manuals and trained **over 10 new technicians** in Solar plant maintenance, helping them get skills to earn a living[cite: 32, 33].</p>
-                </div>
-                
-                <div class="experience-item">
-                    <h4>WEEN Foundation (2025) [cite: 76]</h4>
-                    <p>Core team member of a student-led initiative to educate society on recycling plastic waste[cite: 77]. Organized drives to collect and recycle PET bottles[cite: 78].</p>
-                </div>
-                
-                <div class="experience-item">
-                    <h4>Co-Founder, Roots (2024-25) [cite: 62]</h4>
-                    <p>Responsible for Logistics and Operations of a company selling indoor plants; sold **100+ plants**[cite: 63, 64].</p>
-                </div>
-            </div>
-        </section>
-        
-    </main>
-    
-    <footer>
-        <div class="container">
-            <p>Ahmedabad, India | arjunshah.applications@gmail.com | +91 7016974995 [cite: 2, 3]</p>
-            <p>© 2025 Arjun Shah Portfolio. Inspired by a minimalist design.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
-
