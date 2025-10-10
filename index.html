@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Shah</title>
+    <title>Arjun Shah </title>
     
     <style>
-        /* CSS to mimic the clean, centered, minimalist style of the example website */
+        /* CSS to mimic the clean, centered, minimalist style */
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
@@ -18,26 +18,24 @@
 
         /* Main Container to center content */
         .container {
-            max-width: 800px; /* Slightly narrower for a more focused look */
+            max-width: 800px;
             margin: 60px auto;
             padding: 0 20px;
         }
 
-        /* HEADER: Mimicking the centralized, high-impact header */
+        /* HEADER */
         header {
             margin-bottom: 40px;
         }
 
         header h1 {
-            /* EDIT 2: Your Full Name/Main Title */
             font-size: 3em;
             margin: 0;
-            color: #1a1a1a; /* Dark text */
+            color: #1a1a1a;
             font-weight: 700;
         }
 
         header p {
-            /* EDIT 3: Your Subtitle/Tagline */
             font-size: 1.25em;
             color: #555;
             margin-top: 5px;
@@ -45,14 +43,31 @@
         }
 
         /* ABOUT ME / DESCRIPTION SECTION */
-        #description {
+        #description-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             padding: 20px 0;
-            line-height: 1.6;
-            text-align: left;
             margin-bottom: 40px;
-            border-bottom: 1px solid #eee; /* Subtle separator */
+            border-bottom: 1px solid #eee;
+        }
+        
+        /* Profile image style */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #1a1a1a;
         }
 
+        #description {
+            line-height: 1.6;
+            text-align: left;
+            width: 100%; /* Ensure text uses full width */
+        }
+        
         #description h2 {
             font-size: 1.8em;
             color: #1a1a1a;
@@ -69,64 +84,76 @@
         #tabs-nav {
             display: flex;
             flex-wrap: wrap; 
-            justify-content: center; /* Center the tabs */
+            justify-content: center;
             margin: 30px 0;
             padding: 0;
             list-style: none; 
-            gap: 15px 10px; /* Vertical and horizontal gap */
+            gap: 15px 10px;
         }
 
         .tab-link {
-            /* Professional, understated link style */
             text-decoration: none;
             color: #1a1a1a;
             font-size: 1em;
             font-weight: 500;
             padding: 8px 12px;
-            border: 1px solid #ccc; /* Border to look like a clean tab/button */
+            border: 1px solid #ccc;
             border-radius: 4px;
             transition: background-color 0.2s, color 0.2s;
         }
 
         .tab-link:hover {
-            /* Hover to show interaction */
             background-color: #f0f0f0;
             color: #000;
         }
         
-        /* CALL TO ACTION BUTTON (e.g., for Resume) */
-        .cta-button {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            background-color: #007bff; /* Primary Blue */
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 6px;
-            transition: background-color 0.3s;
-        }
-
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-
-        /* SPACE FOR IMAGES/MEDIA */
-        .media-placeholder {
-            margin-top: 40px;
-            padding: 20px;
+        /* NEW: PORTFOLIO MEDIA GALLERY SECTION */
+        #portfolio-media {
+            margin-top: 50px;
+            padding-top: 30px;
             border-top: 1px solid #eee;
+            text-align: center;
         }
-        
-        /* Optional: Profile image style */
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+
+        #portfolio-media h2 {
+            font-size: 1.8em;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid for images */
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .media-item {
+            text-align: center;
+            border: 1px solid #eee;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .media-item img {
+            width: 100%;
+            height: 150px; /* Fixed height for consistent look */
             object-fit: cover;
-            margin: 10px auto 30px;
-            display: block;
-            border: 3px solid #1a1a1a;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .media-item p {
+            font-size: 0.9em;
+            color: #555;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        /* Final Footer/Contact Info */
+        .contact-info {
+            padding: 20px 0;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
@@ -134,30 +161,55 @@
     <div class="container">
         
         <header>
-            <h1>About Arjun Shah</h1>
-            <p>Aspiring Engineer</p>
+            <h1>Arjun Shah</h1>
+            <p>High School Senior | Entrepreneur | Aspiring Engineer</p>
         </header>
 
-        <section id="description">
-            <h2>Candidate Overview</h2>
-            
-            <p>I am a High School Senior Studying at Ahmedabad International School. My interests lie at the intersention of engineering, sports and research. My strenght is my engineering mind and entrprenuiel drive</p>
-    
+         <img src="C:\Users\DELL\Pictures\Screenshots\Screenshot 2025-10-10 105324.png" class="profile-img">
+            <div id="description">
+                <h2>About Arjun Shah</h2>
+                
+                <p>I am a High School Senior Studying at Ahmedabad International School. My interests lie at the intersection of **engineering, sports, and research**. My strength is my engineering mind and entrepreneurial drive, demonstrated through projects like my company, **Roots**, and advanced studies in aerothermodynamics.</p>
+                <p>This portfolio is a concise, visual guide to my work, designed to show how I translate complex ideas into tangible results.</p>
+            </div>
         </section>
-
-        <a href="your-resume-file.pdf" target="_blank" class="cta-button">Download Full Academic Resume (PDF)</a>
 
         <nav id="tabs-nav">
             <a href="resume.html" class="tab-link">1. Academic CV</a>
             <a href="patents.html" class="tab-link">2. Innovation & Patents</a>
             <a href="aerother-research.html" class="tab-link">3. Research: Aerother Output</a>
-            <a href="maintenance-booklet.html" class="tab-link">4. Technical Documentation Project</a>
+            <a href="maintenance-booklet.html" class="tab-link">4. Technical Documentation</a>
             <a href="hydrogen-paper.html" class="tab-link">5. Green Hydrogen Paper</a>
             <a href="roots-company.html" class="tab-link">6. Roots (Entrepreneurial Venture)</a>
             <a href="photography.html" class="tab-link">7. Photography Portfolio</a>
         </nav>
 
-        <div class="media-placeholder">
+        <section id="portfolio-media">
+            <h2>Key Project Visuals</h2>
+            
+            <div class="media-grid">
+                
+                <div class="media-item">
+                    <p>Research: Aerother Output (Diagram)</p>
+                </div>
+
+                <div class="media-item">
+                    <p>Roots: Company Logo or Product Image</p>
+                </div>
+                
+                <div class="media-item">
+                    <p>Photography: Featured Wildlife Shot</p>
+                </div>
+
+                <div class="media-item">
+                    <p>Green Hydrogen Paper (Visual Summary)</p>
+                </div>
+
+                </div>
+            
+        </section>
+        
+        <div class="contact-info">
             <p style="font-size: 0.9em; color: #777;">Thank you for reviewing my profile. Please refer to the dedicated tabs for in-depth documentation.</p>
             <p style="font-size: 0.9em; color: #777;">**Contact:** [Your Email Address] | [Your LinkedIn Link]</p>
         </div>
@@ -165,4 +217,3 @@
     </div>
 </body>
 </html>
-
