@@ -3,62 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arjun Shah | Applicant Portfolio & Research Profile</title>
+    <title>Arjun Shah | Applicant Portfolio</title>
     
     <style>
-        /* BASIC STYLING AND LAYOUT */
+        /* CSS to mimic the clean, centered, minimalist style of the example website */
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f8f9fa; /* Very light background */
+            background-color: #ffffff; /* Pure white background */
             text-align: center;
         }
 
-        /* Container to limit width for better readability */
+        /* Main Container to center content */
         .container {
-            max-width: 960px;
-            margin: 40px auto;
-            padding: 30px;
-            background-color: #fff;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
-            border-radius: 12px;
+            max-width: 800px; /* Slightly narrower for a more focused look */
+            margin: 60px auto;
+            padding: 0 20px;
         }
 
+        /* HEADER: Mimicking the centralized, high-impact header */
         header {
-            padding: 20px 0;
-            border-bottom: 2px solid #e9ecef;
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         header h1 {
             /* EDIT 2: Your Full Name/Main Title */
-            font-size: 2.8em;
+            font-size: 3em;
             margin: 0;
-            color: #1a2a47; /* Deep Navy Blue */
+            color: #1a1a1a; /* Dark text */
+            font-weight: 700;
         }
 
         header p {
-            /* EDIT 3: Your Subtitle/Tagline (Focus on college major/goals) */
-            font-size: 1.2em;
-            color: #495057;
+            /* EDIT 3: Your Subtitle/Tagline */
+            font-size: 1.25em;
+            color: #555;
             margin-top: 5px;
             font-weight: 300;
         }
 
+        /* ABOUT ME / DESCRIPTION SECTION */
         #description {
             padding: 20px 0;
-            line-height: 1.7;
+            line-height: 1.6;
             text-align: left;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #eee; /* Subtle separator */
         }
 
         #description h2 {
-            font-size: 2em;
-            color: #1a2a47;
-            border-bottom: 1px solid #dee2e6;
-            padding-bottom: 10px;
+            font-size: 1.8em;
+            color: #1a1a1a;
             margin-top: 0;
+            margin-bottom: 15px;
         }
         
         #description p {
@@ -70,88 +69,98 @@
         #tabs-nav {
             display: flex;
             flex-wrap: wrap; 
-            justify-content: center;
-            margin: 40px 0;
+            justify-content: center; /* Center the tabs */
+            margin: 30px 0;
             padding: 0;
             list-style: none; 
-            gap: 12px; /* Space between tabs */
-            border-top: 2px solid #e9ecef;
-            padding-top: 25px;
+            gap: 15px 10px; /* Vertical and horizontal gap */
         }
 
         .tab-link {
-            /* Style for the tab/link appearance */
+            /* Professional, understated link style */
             text-decoration: none;
-            color: #fff;
-            background-color: #007bff; /* Professional Blue */
-            padding: 12px 18px;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: background-color 0.3s, transform 0.2s;
-            flex-grow: 0; 
-            flex-shrink: 0; 
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #1a1a1a;
+            font-size: 1em;
+            font-weight: 500;
+            padding: 8px 12px;
+            border: 1px solid #ccc; /* Border to look like a clean tab/button */
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
         }
 
         .tab-link:hover {
-            /* Hover effect */
-            background-color: #0056b3;
-            transform: translateY(-2px);
+            /* Hover to show interaction */
+            background-color: #f0f0f0;
+            color: #000;
         }
         
-        /* Optional Styling for a small, centered image (e.g., school logo or profile pic) */
-        .profile-img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 10px auto 20px;
-            display: block;
-            border: 4px solid #007bff;
+        /* CALL TO ACTION BUTTON (e.g., for Resume) */
+        .cta-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background-color: #007bff; /* Primary Blue */
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 6px;
+            transition: background-color 0.3s;
         }
 
-        #content-space {
-            text-align: left;
-            padding: 20px 0;
-            border-top: 1px solid #dee2e6;
-            margin-top: 30px;
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* SPACE FOR IMAGES/MEDIA */
+        .media-placeholder {
+            margin-top: 40px;
+            padding: 20px;
+            border-top: 1px solid #eee;
         }
         
+        /* Optional: Profile image style */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto 30px;
+            display: block;
+            border: 3px solid #1a1a1a;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        
         <header>
             <h1>[EDIT 2: Your Full Name]</h1>
-            <p>Aspiring Aerospace Engineer | Sustainable Technology Researcher | Class of [Your Graduation Year]</p>
+            <p>Aspiring Engineer | Entrepreneur | Applied Researcher</p>
         </header>
-        
+
         <section id="description">
-            <h2>Candidate Overview: Passion & Impact</h2>
+            <h2>Candidate Overview</h2>
             
-            <p>I am a high school student with a profound commitment to **sustainable engineering and research**. My work, detailed below, focuses on applying theoretical knowledge to real-world challenges, such as optimizing aerodynamic efficiency and exploring the viability of green energy sources. I am seeking a rigorous academic environment where I can expand my understanding of fluid dynamics and renewable energy systems.</p>
-            <p>This portal serves as a comprehensive collection of my **academic, research, and extracurricular outputs**, designed to provide the Admissions Committee with a full view of my qualifications, commitment to intellectual growth, and potential for success in a challenging university setting.</p>
+            <p>I am a high school student whose passion lies at the intersection of **Aerospace Engineering, Sustainable Technology, and Entrepreneurship**. My academic journey is marked by in-depth research, including aerothermodynamics studies, and the practical application of business principles through my company, **Roots**. I am eager to join a university that fosters innovation and enables me to translate complex theory into scalable, real-world solutions.</p>
+            <p>This portfolio is a curated presentation of my key achievements, providing the Admissions Committee with comprehensive documentation of my technical depth and entrepreneurial drive.</p>
         </section>
+
+        <a href="your-resume-file.pdf" target="_blank" class="cta-button">Download Full Academic Resume (PDF)</a>
 
         <nav id="tabs-nav">
-            <a href="resume.html" class="tab-link">1. Academic Resume / CV</a>
+            <a href="resume.html" class="tab-link">1. Academic CV</a>
             <a href="patents.html" class="tab-link">2. Innovation & Patents</a>
-            <a href="aerother-research.html" class="tab-link">3. Research Output (Aerother)</a>
+            <a href="aerother-research.html" class="tab-link">3. Research: Aerother Output</a>
             <a href="maintenance-booklet.html" class="tab-link">4. Technical Documentation Project</a>
-            <a href="hydrogen-paper.html" class="tab-link">5. Green Hydrogen Position Paper</a>
-            <a href="roots.html" class="tab-link">6. Roots: My Background & Heritage</a>
-            <a href="photography.html" class="tab-link">7. Photography Portfolio (Wildlife & School)</a>
+            <a href="hydrogen-paper.html" class="tab-link">5. Green Hydrogen Paper</a>
+            <a href="roots-company.html" class="tab-link">6. Roots (Entrepreneurial Venture)</a>
+            <a href="photography.html" class="tab-link">7. Photography Portfolio</a>
         </nav>
 
-        <section id="content-space">
-            <h2>Quick Access: Key Documents</h2>
-            <p>For immediate review, please find my primary application documents here:</p>
-            
-            <ul>
-                <li><a href="your-resume-file.pdf" download style="color: #007bff; font-weight: bold;">Download Full Academic Resume (PDF)</a></li>
-                <li><a href="essay-supplement.pdf" style="color: #007bff;">Supplemental Essay: Green Hydrogen Rationale</a></li>
-                </ul>
-        </section>
+        <div class="media-placeholder">
+            <p style="font-size: 0.9em; color: #777;">Thank you for reviewing my profile. Please refer to the dedicated tabs for in-depth documentation.</p>
+            <p style="font-size: 0.9em; color: #777;">**Contact:** [Your Email Address] | [Your LinkedIn Link]</p>
+        </div>
         
     </div>
 </body>
